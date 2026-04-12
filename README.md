@@ -36,22 +36,29 @@ El sistema busca resolver las siguientes necesidades:
 El programa incluye las siguientes opciones en el menu principal:
 
 ### 1. Ver tabla de posiciones
+
 Lee todos los partidos almacenados, construye la tabla de posiciones, la ordena por puntos y la muestra en consola. Ademas, guarda la tabla en el archivo `tabla.txt`.
 
 ### 2. Registrar resultado de un partido
+
 Permite al usuario ingresar la fecha, seleccionar el equipo local, seleccionar el equipo visitante e ingresar los goles de cada uno. Luego guarda el partido en `partidos.txt` y lo registra tambien en `fechas.txt` como parte del historial de jornadas.
 
 ### 3. Ver historial de jornadas
+
 Muestra en consola el contenido de `fechas.txt`, donde quedan guardadas las jornadas registradas.
 
 ### 4. Ver todos los partidos jugados
+
 Lee `partidos.txt` y muestra todos los partidos registrados hasta el momento.
 
 ### 5. Exportar archivos a CSV
+
 Convierte la informacion de partidos y tabla de posiciones a archivos `.csv`, para que pueda abrirse facilmente en Excel o herramientas similares.
 
 ### 6. Ver estadisticas especiales
+
 Esta es una funcionalidad extra agregada de forma creativa. Muestra:
+
 - Lider actual de la liga
 - Ultimo lugar
 - Mejor ataque
@@ -59,9 +66,11 @@ Esta es una funcionalidad extra agregada de forma creativa. Muestra:
 - Partido mas goleador
 
 ### 7. Reiniciar estadisticas de la tabla actual
+
 Esta opcion reinicia en memoria las estadisticas de la tabla actual usando punteros. Se implemento como ejercicio adicional para demostrar el uso de punteros sobre estructuras de tipo `Team`.
 
 ### 8. Salir
+
 Cierra el programa.
 
 ---
@@ -71,7 +80,7 @@ Cierra el programa.
 El proyecto esta organizado en carpetas para separar el codigo fuente de los archivos de datos.
 
 ```txt
-LigaV1/
+liga-futbol/
   data/
     config.txt
     fechas.txt
@@ -83,3 +92,14 @@ LigaV1/
     league.h
   README.md
   .gitignore
+```
+
+---
+
+## 5. Compilacion del programa
+
+Para compilar el proyecto, debes ubicarte en la carpeta raiz del mismo y ejecutar el siguiente comando en la terminal:
+
+```bash
+g++ src/main.cpp src/league.cpp -o program
+```
