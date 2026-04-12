@@ -1,0 +1,10 @@
+# Configuracion de la liga
+liga=Liga Argentina
+victoria=3
+empate=1
+derrota=0
+equipo=Boca Juniors
+equipo=River Plate
+equipo=San Lorenzo
+equipo=Racing Club
+equipo=Independiente
