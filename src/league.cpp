@@ -374,11 +374,11 @@ void saveMatch(Match newMatch, string fileName) {
     ofstream file(fileName, ios::app);
 
     if (file.is_open()) {
-        file << newMatch.Date << ";"
-             << newMatch.LocalTeam << ";"
-             << newMatch.VisitingTeam << ";"
-             << newMatch.LocalTeamGoals << ";"
-             << newMatch.VisitingTeamGoals << "\n";
+        file << newMatch.Date << ";";
+        file << newMatch.LocalTeam << ";";
+        file << newMatch.VisitingTeam << ";";
+        file << newMatch.LocalTeamGoals << ";";
+        file << newMatch.VisitingTeamGoals << "\n";
 
         file.close();
     }
@@ -395,10 +395,10 @@ void saveMatchday(int matchdayNumber, string date, vector<Match> matches, string
         file << "FECHA=" << date << "\n";
 
         for (int i = 0; i < matches.size(); i++) {
-            file << matches[i].LocalTeam << ";"
-                 << matches[i].VisitingTeam << ";"
-                 << matches[i].LocalTeamGoals << ";"
-                 << matches[i].VisitingTeamGoals << "\n";
+            file << matches[i].LocalTeam << ";";
+            file << matches[i].VisitingTeam << ";";
+            file << matches[i].LocalTeamGoals << ";";
+            file << matches[i].VisitingTeamGoals << "\n";
         }
 
         file << "FIN_JORNADA" << "\n";
