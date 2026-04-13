@@ -312,16 +312,16 @@ void saveTable(vector<Team> table, string fileName) {
         file << "-------------------------------------------------------------" << "\n";
 
         for (int i = 0; i < table.size(); i++) {
-            file << i + 1 << "  "
-                 << table[i].TeamName << "  "
-                 << table[i].playedGames << "   "
-                 << table[i].WinGames << "   "
-                 << table[i].DrawGames << "   "
-                 << table[i].LostGames << "   "
-                 << table[i].GoalsScored << "   "
-                 << table[i].GoalsConceded << "   "
-                 << table[i].GoalDifference << "   "
-                 << table[i].points << "\n";
+            file << i + 1 << "  ";
+            file << table[i].TeamName << "  ";
+            file << table[i].playedGames << "   ";
+            file << table[i].WinGames << "   ";
+            file << table[i].DrawGames << "   ";
+            file << table[i].LostGames << "   ";
+            file << table[i].GoalsScored << "   ";
+            file << table[i].GoalsConceded << "   ";
+            file << table[i].GoalDifference << "   ";
+            file << table[i].points << "\n";
         }
 
         file << "-------------------------------------------------------------" << "\n";
