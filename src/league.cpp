@@ -286,16 +286,16 @@ void showTable(vector<Team> table) {
     cout << "-------------------------------------------------------------" << "\n";
 
     for (int i = 0; i < table.size(); i++) {
-        cout << i + 1 << "  "
-             << table[i].TeamName << "  "
-             << table[i].playedGames << "   "
-             << table[i].WinGames << "   "
-             << table[i].DrawGames << "   "
-             << table[i].LostGames << "   "
-             << table[i].GoalsScored << "   "
-             << table[i].GoalsConceded << "   "
-             << table[i].GoalDifference << "   "
-             << table[i].points << "\n";
+        cout << i + 1 << "  ";
+        cout << table[i].TeamName << "  ";
+        cout << table[i].playedGames << "   ";
+        cout << table[i].WinGames << "   ";
+        cout << table[i].DrawGames << "   ";
+        cout << table[i].LostGames << "   ";
+        cout << table[i].GoalsScored << "   ";
+        cout << table[i].GoalsConceded << "   ";
+        cout << table[i].GoalDifference << "   ";
+        cout << table[i].points << "\n";
     }
 
     cout << "-------------------------------------------------------------" << "\n";
